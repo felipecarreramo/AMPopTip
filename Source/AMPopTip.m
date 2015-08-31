@@ -369,6 +369,12 @@
     [self setNeedsLayout];
 }
 
+- (void) updateAttributedText:(NSAttributedString *) attributedString {
+    self.attributedText = attributedString;
+    self.accessibilityLabel = [attributedString string];
+    [self setNeedsLayout];
+}
+
 - (void)startActionAnimation {
     [self performActionAnimation];
 }

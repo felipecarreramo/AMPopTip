@@ -144,6 +144,14 @@ typedef NS_ENUM(NSInteger, AMPopTipActionAnimation) {
  */
 - (void)updateText:(NSString *)text;
 
+/** Update the attributed text
+ *
+ * Set the new attrbuted text shown in the poptip
+ * @param attributedString The new attributed text
+ */
+- (void) updateAttributedText:(NSAttributedString *) attributedString;
+
+
 /** Makes the popover perform the action animation
  *
  * Makes the popover perform the action indefinitely. The action animation calls for the user's attention after the popover is shown
